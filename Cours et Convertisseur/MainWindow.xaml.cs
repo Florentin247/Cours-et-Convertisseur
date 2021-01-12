@@ -47,11 +47,5 @@ namespace Cours_et_Convertisseur
             
         }
 
-        private void Page_Loaded_1(object sender, RoutedEventArgs e)
-        {
-            Uri iconUri = new Uri("./accueil.png", UriKind.RelativeOrAbsolute);
-            (this.Parent as Window).Icon = BitmapFrame.Create(iconUri);
-        }
-
     }
 }
