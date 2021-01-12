@@ -76,6 +76,5 @@ namespace Cours_et_Convertisseur
             // Close this window
             this.Close();
         }
-
     }
 }

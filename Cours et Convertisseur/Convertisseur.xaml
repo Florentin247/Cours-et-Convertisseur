@@ -20,8 +20,8 @@
             <RadioButton x:Name="Decout" Content="Décimal" GroupName="output" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Foreground="White" Checked="Decout_Checked"/>
             <RadioButton x:Name="Octout" Content="Octal" GroupName="output" HorizontalAlignment="Left" Margin="0,60,0,0" VerticalAlignment="Top" Background="White" Foreground="White" Checked="Octout_Checked"/>
         </Grid>
-        <TextBox x:Name="Input" HorizontalAlignment="Left" Height="62" Margin="287,60,0,0" TextWrapping="Wrap" Text="Entre ton nombre!" VerticalAlignment="Top" Width="250" IsUndoEnabled="True"/>
-        <TextBox x:Name="Output" HorizontalAlignment="Left" Height="62" Margin="287,283,0,0" Text="La sortie se trouve ici!" VerticalAlignment="Top" Width="250" TextWrapping="WrapWithOverflow" IsUndoEnabled="False"/>
+        <TextBox x:Name="Input" HorizontalAlignment="Left" Height="62" Margin="287,60,0,0" TextWrapping="Wrap" Text="Entre ton nombre!" VerticalAlignment="Top" Width="250"/>
+        <TextBox x:Name="Output" HorizontalAlignment="Left" Height="62" Margin="287,283,0,0" TextWrapping="Wrap" Text="La sortie se trouve ici!" VerticalAlignment="Top" Width="250"/>
         <Label x:Name="NomSortie" HorizontalAlignment="Left" Margin="287,262,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Label x:Name="NomEntre" HorizontalAlignment="Left" Margin="287,39,0,0" VerticalAlignment="Top" Foreground="White"/>
         <Button x:Name="Return" Content="Retour" HorizontalAlignment="Left" Margin="708,383,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="Return_Click" FontFamily="Segoe Script" FontSize="18" Background="#FF0A8597"/>
