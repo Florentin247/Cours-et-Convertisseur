@@ -1,0 +1,60 @@
+﻿<Window x:Class="Cours_et_Convertisseur.Cours"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cours_et_Convertisseur"
+        mc:Ignorable="d"
+        Title="Cours" Height="450" Width="800" ResizeMode="CanMinimize">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="420" VerticalAlignment="Top" Width="794" Source="LockScreen_d993c250bf993a6bcab610d25c6b6739f09be34ce23c7f47140b0ace2765787a.jpg" Stretch="UniformToFill" Margin="0,0,-0.4,0"/>
+        <Menu HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="50,50,0,0" Padding="5,10,0,0" UseLayoutRounding="True">
+            <Menu.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFB95555" Offset="0.698"/>
+                </RadialGradientBrush>
+            </Menu.Background>
+            <Button x:Name="Maths" Content="Maths" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Maths_Click"/>
+            <Button x:Name="Physique" Content="Physique" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Physique_Click"/>
+            <Button x:Name="Chimie" Content="Chimie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Chimie_Click"/>
+            <Button x:Name="Sin" Content="SIN" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="Sin_Click"/>
+        </Menu>
+        <Menu x:Name="MMaths" HorizontalAlignment="Left" Height="119" Margin="150,59,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden">
+            <Label x:Name="Mat" Content="Maths" RenderTransformOrigin="1.13,0.439" Margin="18,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="Maths1" Content="Chapitre 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="MMaths_Click" />
+            <Button x:Name="Maths2" Content="Chapitre 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="MMaths_Click" />
+            <Button x:Name="Maths3" Content="Chapitre 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="MMaths_Click" />
+            <Button x:Name="Maths4" Content="Chapitre 4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="MMaths_Click" />
+        </Menu>
+        <Menu x:Name="MPhysique" HorizontalAlignment="Left" Height="126" Margin="150,78,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden">
+            <Label x:Name="Ph" Content="Physique" RenderTransformOrigin="1.13,0.439" Margin="18,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="Chap1" Content="Chapitre 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="MPhysique_Click"/>
+            <Button x:Name="Chap2" Content="Chapitre 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="MPhysique_Click"/>
+            <Button x:Name="Chap3" Content="Chapitre 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="MPhysique_Click"/>
+            <Button x:Name="Chap4" Content="Chapitre 4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="MPhysique_Click"/>
+        </Menu>
+        <Menu x:Name="MChimie" HorizontalAlignment="Left" Height="119" Margin="150,104,0,0" VerticalAlignment="Top" Width="100" Visibility="Hidden">
+            <Label x:Name="Chim" Content="Chimie" RenderTransformOrigin="1.13,0.439" Margin="18,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="ChapC1" Content="Chapitre 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"   Click="MChimie_Click"/>
+            <Button x:Name="ChapC2" Content="Chapitre 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"   Click="MChimie_Click"/>
+            <Button x:Name="ChapC3" Content="Chapitre 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"   Click="MChimie_Click"/>
+            <Button x:Name="ChapC4" Content="Chapitre 4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"   Click="MChimie_Click"/>
+        </Menu>
+        <Menu x:Name="MSIN" HorizontalAlignment="Left" Height="119" Margin="150,123,0,0" VerticalAlignment="Top" Width="88" Visibility="Hidden">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF914141" Offset="0.358"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <Label x:Name="SI" Content="SIN" RenderTransformOrigin="1.13,0.439" Margin="18,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <Button x:Name="HTML"   Content="HTML" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"   Click="MSIN_Click"/>
+            <Button x:Name="CSS"    Content="CSS" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"         Click="MSIN_Click"/>
+            <Button x:Name="JS"     Content="Javascript" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="MSIN_Click"/>
+            <Button x:Name="Py"     Content="Python" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"      Click="MSIN_Click"/>
+        </Menu>
+        <Button x:Name="Return" Content="Retour" HorizontalAlignment="Left" Margin="671,360,0,0" VerticalAlignment="Top" Width="76" Height="27" Click="Return_Click" FontFamily="Segoe Script" FontSize="18" Background="#FF0A8597" RenderTransformOrigin="0.495,0.528"/>
+
+    </Grid>
+</Window>
