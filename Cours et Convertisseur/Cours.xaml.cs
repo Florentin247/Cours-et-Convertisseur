@@ -64,7 +64,7 @@ namespace Cours_et_Convertisseur
 
             switch ((string)((Button)sender).Content)
             {
-                case "Je suis un bouton":
+                case "Chapitre 1":
                     Console.WriteLine("Chapitre 1");
                     String fileName = @"D:\Terminale_Sin\Physique chimie\Cours\Chapitre 4\Cours_chap4.pdf";
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
